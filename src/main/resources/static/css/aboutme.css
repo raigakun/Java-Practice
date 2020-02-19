@@ -1,21 +1,3 @@
-/* CSSのリセット（消さないでください） */
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Hiragino Maru Gothic ProN';
-}
-
-
 /* ここまで*/
 /* CSSのリセット（消さないでください） */
 html, body,
@@ -25,49 +7,69 @@ form, input, div {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
+  margin-top: 5px;
 }
 a {
     text-decoration: none;
-    color: white;
     font-family: 'Hiragino Maru Gothic ProN';
+    color: #FFD700;
 }
 
 
 /* ここまで*/
 
 .wrapper {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    background-color: #708090;
+    padding-top: 50px;
 }
 
+
 .navbar-header {
-    box-shadow: 0 2px 0 0 whitesmoke;
-    padding: 15px 15px;
-    font-family: arial narrow;
-    background-color: white;
-    
+  box-shadow: 0 2px 0 0 gray;
+  padding: 5px 15px;
+  font-family: arial narrow;
+  background-color:#d3d3d3;
+  position: fixed;
+  width: 100%;
+  display: flex;
 }
+
+.portfolio {
+  font-size: 20px;
+  font-family: arial narrow;
+  font-weight: bold;
+}
+
+.links {
+  font-size: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555;
+}
+
 
 .header {
     height: 50px;
-    font-size: 30px;
+    font-size: 100px;
     font-weight: bold;
-    /* padding-left: 30px; */
-    margin-top: 30px;
-    text-align: center;
     font-family: arial narrow;
+    color: #F5F5DC;
 
 }
 
-li {
-    margin-top: 5px;
-}
+
+
 .main1 {
-    padding: 30px 30px;
+    padding: 120px 100px;
     font-family: arial narrow;
     text-align: center;
+    color: #F5F5DC;
 }
 
 
@@ -75,12 +77,13 @@ li {
 .main2 {
     margin-top: 20px;
     text-align: center;
+    justify-content: center;
+    display:flex;
 }
 
 .main2__index {
     height: calc(100% - 30px);
-    width:  calc(60% - 30px);
-    background-color: orange;
+    width:  200px;
     display: inline-block;
     border-radius: 30px;
     font-size:20px;
@@ -88,8 +91,7 @@ li {
 
 .main2__challenge {
     height: calc(100% - 30px);
-    width:  calc(60% - 30px);
-    background-color: red;
+    width:  200px;
     display:inline-block;
     border-radius: 30px;
     font-size:20px;
@@ -99,3 +101,7 @@ li {
   text-align: center;
   margin-top: 130px;
 }
+
+
+
+
