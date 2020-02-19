@@ -1,0 +1,96 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Hiragino Maru Gothic ProN';
+}
+
+
+/* ここまで*/
+body {
+    background-image: url("/imgs/booksback.jpg");
+    background-size: 100%;
+}
+
+.hedder{
+    display: flex;
+    justify-content: center;
+}
+p {
+    color: #228b22;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 72px;
+    margin-top: 50px;
+    padding-left: 80px;
+}
+
+.links{
+    font-size: 20px;
+    font-family: fantasy;
+    color: #228b22;
+}
+li {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.form-control{
+    height: 40px;
+    width: 450px;
+    font-size: 100%;
+}
+
+.boxs {
+    background-color: #6b8e23;
+    color: white;
+  font-size: 20px;
+  padding: 5px 30px;
+  border: 0px;
+}
+
+.num {
+    text-align: center;
+    font-size: 20px;
+}
+
+ul {
+    text-align: center;
+}
+
+table{
+    width: 60%;
+    border-collapse:separate;
+    border-spacing: 0;
+    border-color:#a8b7c5;
+    margin: 0 auto;
+}
+
+table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#6b8e23, #556b2f);
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    padding: 5px 0;
+}
+  
+table td{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.id{
+    width: 5%;
+}

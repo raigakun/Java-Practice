@@ -1,0 +1,101 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Hiragino Maru Gothic ProN';
+}
+
+
+/* ここまで*/
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Hiragino Maru Gothic ProN';
+}
+
+
+/* ここまで*/
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar-header {
+    box-shadow: 0 2px 0 0 whitesmoke;
+    padding: 15px 15px;
+    font-family: arial narrow;
+    background-color: white;
+    
+}
+
+.header {
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    /* padding-left: 30px; */
+    margin-top: 30px;
+    text-align: center;
+    font-family: arial narrow;
+
+}
+
+li {
+    margin-top: 5px;
+}
+.main1 {
+    padding: 30px 30px;
+    font-family: arial narrow;
+    text-align: center;
+}
+
+
+
+.main2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main2__index {
+    height: calc(100% - 30px);
+    width:  calc(60% - 30px);
+    background-color: orange;
+    display: inline-block;
+    border-radius: 30px;
+    font-size:20px;
+}
+
+.main2__challenge {
+    height: calc(100% - 30px);
+    width:  calc(60% - 30px);
+    background-color: red;
+    display:inline-block;
+    border-radius: 30px;
+    font-size:20px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 130px;
+}

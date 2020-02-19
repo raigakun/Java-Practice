@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>本を検索する</title>
+    <link href="/css/search.css" th:href="@{/css/search.css}" rel="stylesheet"></link>
+  </head>
+  <body>
+  <div class="hedder">
+      <p>Yohele</p><a href="/" class="links">topに戻る</a>
+  </div>
+    <div class="wapper">
+    <form method="post" name="form1" accept-charset="UTF-8">
+      <ul>
+        <li>本のタイトル : <input type="text" class="form-control" id="arrival" name="arrival" th:value="${arrival}"/></li>
+        <li>著者　　　　 : <input type="text" class="form-control" id="genre" name="genre" th:value="${genre}"/></li>
+        <li><input class="boxs" type="submit" value="検索"/></li>
+      </ul>
+    </form>
+    <div class="num" th:if="${resultSize > 0}"><label th:text="${resultSize}"></label>件</div>
+    <table border="1" th:if="${resultSize > 0}" class="book"> 
+      <tr>
+        <th>ID</th>
+        <th>本のタイトル</th>
+        <th>著者名</th>
+        <th>ジャンル</th>
+        <th>入荷日</th>
+      </tr>
+      <tr th:each="data : ${result}">
+        <td th:text="${data.id}"/>
+        <td th:text="${data.arrival}"/>
+        <td th:text="${data.genre}"/>
+        <td th:text="${data.writer}"/>
+        <td th:text="${data.titlename}"/>
+      </tr>
+    </table>
+  </div>
+  </body>
+</html>
