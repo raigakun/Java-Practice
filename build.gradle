@@ -1,11 +1,10 @@
-defaultTasks "clean", "build"
-
-
-plugins {
+plugins{
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 }
+
+defaultTasks "clean", "build"
 
 group = 'test'
 version = '0.0.1-SNAPSHOT'
