@@ -33,6 +33,18 @@ out/
 
 .idea
 /build/
-/.gradle/
 spring-boot-sample.iml
 bin
+
+.apt_generated
+.gradle
+.settings
+build
+lib
+log
+temp
+.classpath
+.DS_Store
+.factorypath
+.project
+gradlew.bat
